@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#rm_logo {
+  width: 30vw;
+}
+
+.landingButton {
+  font-family: Gloria Hallelujah;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(57, 150, 69);
+  color: rgb(255, 253, 238);
+  border-radius: 20px;
+  border-color: rgba(255, 253, 238, 0);
+  margin: 50px;
+}
+
+.landingButton:hover {
+  background-color: rgb(210, 224, 84);
+  color: black;
+}
+
+.switch {
+  vertical-align: text-top;
+}
+
+.card {
+  color: white;
+  
+  /*flex: 1 0 100%;*/
+}
+
+.card-container {
+  width: 94%;
+  height: fit-content;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  float:left;
+  border-radius: 10px;
+  margin: 2%;
+  overflow: hidden;
+  border-color: white;
+  border-style: solid;
+  padding-bottom: 20px;
+  border-width: 5px;
+  font-family: Gloria Hallelujah;
+
+}
+
+.card-image {
+  width: 100%;
+}
+.card-image-back {
+  filter: blur(8px);
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-style: solid;
+  width: 99%;
+  margin: auto;  
+  /* margin: auto;
+  width: calc(80%);
+  border: 3px solid green;
+  height: 1800px;
+  text-align: center; */
+ 
+}
+
+.card-back {
+  /* background-image: url("../public/MeeseeksHQ.webp"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.cardtext {
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  top: 1px;
+  left: 10%;
+  color: black;
+  /* -webkit-text-stroke: 0.1px;
+  -webkit-text-stroke-color: black; */
+  font-weight: bold;
+}
+
+.cardtext-flipped {
+  visibility: visible;
+  color: rgb(210, 224, 84);
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: rgb(57, 150, 69);
+  font-size: 17px;
+  
+}
+
+.cardtext, .cardtext-flipped {
+  /*transition: visibility 0s, opacity 0.5s linear;*/
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes flip {
+  0% {
+    height: 0;
+}
+100% {
+    height: 1;
+}
+}
+
+/* body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+} */
+
+.pagebutton {
+  width: 60px;
+}
+
+.pagetext {
+  color: white;
+  float: left;
+  margin-left: 13px;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.paginator {
+  margin: auto;
+  width: 80%;
+
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 35.3vw 2.5vw 4vw 3vw 30vw;
+  grid-template-rows: 100%;
+  height: 40px;
+}
+
+#nextbutton {
+margin-left: 10px;
+grid-column: 4;
+grid-row: 1;
+}
+
+#prevbutton {
+  float: left;
+  grid-column: 2;
+  grid-row: 1;
+}
